@@ -1,0 +1,9 @@
+{
+    "dbConnection" :{
+        "host":"-",
+        "port":"-",
+        "database":"-",
+        "userName":"-",
+        "password":"-"
+    }
+}
