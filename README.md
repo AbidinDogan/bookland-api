@@ -1,4 +1,4 @@
 # bookland-api
 rest api with nodejs, express, postgresql
 # postgresql
-bookland-api/sql_scripts.sql
+bookland-api/resources/sql_scripts.sql
