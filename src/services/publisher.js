@@ -1,7 +1,5 @@
 const Pool = require('pg').Pool;
 const config = require('config');
-const { response } = require('express');
-const { request } = require('express');
 
 const pool = new Pool({
     host: config.get('dbConnection.host'),
