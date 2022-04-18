@@ -4,6 +4,6 @@
         "port":"5432",
         "database":"bookland",
         "userName":"postgres",
-        "password":"Str0ngP@ss"
+        "password":"********"
     }
 }
