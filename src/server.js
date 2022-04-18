@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const publisherRoutes = require('./routes/publisher');
 const authorRoutes = require('./routes/author');
+const bookRoutes = require('./routes/book');
 const app = express();
 const port = 3000;
 
@@ -14,5 +15,6 @@ app.get('/', (request, response) => {
 
 app.use('/', publisherRoutes);
 app.use('/', authorRoutes);
+app.use('/', bookRoutes);
 
 app.listen(port, () => {console.log(`App running on port ${port}.`)});

@@ -34,7 +34,7 @@ const getAuthorById = (request, response) => {
 const createAuthor = (request, response) => {
     const {firstName, lastName} = request.body;
 
-    pool.query('insert into Authors (firstName, lastName) values($1, $2) returning id', [firstName, lastName], (error, results) => {
+    pool.query('insert into Authors ("firstName", "lastName") values($1, $2) returning id', [firstName, lastName], (error, results) => {
         if(error){
             throw error;
         }
@@ -47,7 +47,7 @@ const updateAuthor = (request, response) => {
     const id = request.params.id;
     const {firstName, lastName} = request.body;
 
-    pool.query('update Authors set firstName = $1, lastName = $2 where id = $3', [firstName, lastName, id], (error, results) => {
+    pool.query('update Authors set "firstName" = $1, "lastName" = $2 where id = $3', [firstName, lastName, id], (error, results) => {
         if(error){
             throw error;
         }
